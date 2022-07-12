@@ -112,7 +112,7 @@ print(nolambda1(10,20))
 print((lambda x,y: x + y)(10,20))
 
 
-# map 자바랑 유사
+# map - 자바 스트림.맵이랑 유사
 map1 = list(map(lambda x : x **2, range(5)))
 print(map1)
 
@@ -125,4 +125,42 @@ filter1 = list(filter(lambda x: x < 5,range(10)))
 print(filter1) # [0,1,2,3,4]
 
 
-#4. 데이터타입부터 봐야됨
+#타입확인 
+type1 = "d"
+type2 = 0
+type3 = 0.001
+print(type(type1))  # str
+print(type(type2))  # int
+print(type(type3))  # float
+
+
+#문자열 자르기
+str1 = "Python"
+print(str1[0:2])#Py
+print(str1[:2])#Py   0부터시작시 0생략가능
+print(str1[-2:]) # on   음수주면 뒷부분부터가져옴s
+print(str1[::-1]) # nohtyP 역순으로 전부복사  
+
+#문자열 소문자, 대문자
+str2 = 'P@ssW0rd'
+print(str2.lower()) #p@ssw0rd
+print(str2.upper()) #P@SSW0RD
+
+#특정문자 대체
+str3 = 'Ruc'
+print(str3.replace('c','nnnnnnnnnnnn')) #Runnnnnnnnnnnn
+str4 = 'RuRuRu'
+print(str4.replace('R','U'))  # UuUuUu 싹다바뀜
+
+
+
+#매핑 (dict) - java의 map이라고 보면됨
+print(type({'key':'value','key2':'value2'}));
+
+#bool   - tf
+print(type(True));
+
+
+#set - 순서없는 집합
+print({'1','2','3'});
+
