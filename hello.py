@@ -11,6 +11,11 @@ print(4400 % 1000)
 # 4  나누기후 소수점버림
 print(4400 // 1000)
 
+# 몫과 나머지 한번에 구하기  (숫자 / 나눌값)
+div_value = divmod(50,8)  # (6,2)
+print(div_value)
+
+
 # list
 family = ['a','b','c']
 
@@ -163,4 +168,65 @@ print(type(True));
 
 #set - 순서없는 집합
 print({'1','2','3'});
+
+
+#while
+print('#'*20)
+print('#####While#####')
+print('#'*20)
+
+# while 예제
+
+num = 1
+while num <= 10:
+    # 파이썬은  while + (int형)이 안됨
+    # f-string이 비교적 최신이라고함
+    # 다른방법: "while: {}".format(num)
+    # 다른방법2: ("while: %s",num)
+    print(f"while: {num}") # f-string
+    num +=1
+
+
+#if문
+print('#'*20)
+print('#########IF#########')
+print('#'*20)
+
+
+a = 1234
+b = 4321
+
+if a > b :
+    print('a win')
+else:
+    print('b win')
+
+a= 111
+b= 333
+    
+if a > b :
+    print('a > b')
+elif a == b:
+    print ('a == b')
+else:
+    print('a < b')
+    
+### for 문
+print('#'*20)
+print('########FOR#########')
+print('#'*20)
+
+family = ['mother','father','son']
+for f in family:
+    print(f)
+
+# a 이상 b미만
+range_list = list(range(2,7))
+print(range_list)
+
+# range 를 활용한 for문
+
+for i in range(4,8):
+    print('range for')
+    print(i)
 
