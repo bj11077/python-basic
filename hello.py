@@ -230,3 +230,17 @@ for i in range(4,8):
     print('range for')
     print(i)
 
+
+#for-else문
+# for문이 끝나고 뜸
+# finally랑 같음
+for x in [1,2,3,4]:
+    print(x)
+else:
+    print('끝')
+countdown=5
+while countdown > 0:
+    print(countdown)
+    countdown -= 1
+else:
+    print('while 끝')
